@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form - Mini Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Survey - Migrating birds in Uttar Pradesh</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="">
+        <fieldset>
+            <legend>Observer's Info</legend>
+            <label for="name">Full Name: <input type="text" placeholder="Enter your name" id="name" required></label>
+            <label for="phone">Mobile No: <input type="tel" placeholder="Enter your mobile number" id="phone"></label>
+            <label for="email">Email: <input type="email" placeholder="Enter your email" id="email"></label>
+            <label for="date-time">Date and Time of Observation: <input type="datetime-local"
+                    placeholder="Enter the date and time of observation" id="date-time"></label>
+        </fieldset>
+        <fieldset id="weather">
+            <label for="weather">Weather Conditions: </label>
+            <select name="weather" id="weather">
+                <option value="">Select weather</option>
+                <option value="1">Sunny</option>
+                <option value="2">Cloudy</option>
+                <option value="3">Rainy</option>
+                <option value="4">Foggy</option>
+                <option value="5">Rainy</option>
+            </select>
+            <fieldset>
+                <label for="temp">Temperature: <input type="number" name="temp" id="temp" min=-7 max=122></label>
+                <select name="tempUnit" id="tempUnit">
+                    <option value="c">C</option>
+                    <option value="f">F</option>
+                </select>
+            </fieldset>
+        </fieldset>
+        <fieldset id="speciesInfo">
+            <legend>Bird Species Details</legend>
+            <label for="birdName">Common Name of bird: <input type="text" name="birdName" id="birdName"></label>
+            <label for="count">Number of Birds Observed: </label>
+            <select name="count" id="count">
+                <option value="">Select count</option>
+                <option value="1">less than 10</option>
+                <option value="2">greater than 10 and less than 20</option>
+                <option value="3">greater than 20 and less than 50</option>
+                <option value="4">greater than 50</option>
+            </select>
+            <label for="behavior">Bird Behavior</label>
+            <label for="flying"><input type="radio" name="behavior" id="flying" value="Flying"> Flying</label>
+            <label for="resting">
+                <input type="radio" name="behavior" id="resting" value="Resting"> Resting</label>
+            <label for="feeding">
+                <input type="radio" name="behavior" id="feeding" value="Feeding"> Feeding</label>
+            <label for="nesting"><input type="radio" name="behavior" id="nesting" value="Nesting"> Nesting</label>
+            <label for="physicalInfo">Color and Physical Features</label>
+            <textarea name="physicalInfo" id="physicalInfo"
+                placeholder="Describe physical appearance of the birds sighted" rows="4" cols="30"></textarea>
+        </fieldset>
+        <fieldset id="HabitatInfo">
+            <legend>Habitat Information</legend>
+            <fieldset class="formSection">
+                <label for="habitat">Type of Habitat? </label>
+                <select name="habitat" id="habitat">
+                    <option value="">Select</option>
+                    <option value="1">Wetlands</option>
+                    <option value="2">Forest</option>
+                    <option value="3">Grassland</option>
+                    <option value="4">Urban</option>
+                    <option value="5">Agricultural Land</option>
+                    <option value="6">Mountain</option>
+                </select>
+            </fieldset>
+            <fieldset class="formSection">
+                <label for="waterSource">Nearby Water Source? </label>
+                <select name="waterSource" id="waterSource">
+                    <option value="">Select</option>
+                    <option value="1">River</option>
+                    <option value="2">Lake</option>
+                    <option value="3">Pond</option>
+                    <option value="4">Canal</option>
+                    <option value="5">Reservoir</option>
+                    <option value="6">None</option>
+                </select>
+            </fieldset>
+            <fieldset class="formSection">
+                <label for="humanDisturbance">Human Disturbances: </label>
+                <select name="humanDisturbance" id="humanDisturbance">
+                    <option value="">Select</option>
+                    <option value="1">Construction</option>
+                    <option value="2">Traffic</option>
+                    <option value="3">Pollution</option>
+                    <option value="4">Hunting</option>
+                    <option value="5">None</option>
+                </select>
+            </fieldset>
+        </fieldset>
+        <fieldset id="MigrationIndo">
+            <legend>Migration Details</legend>
+            <label for="isMigratory">Is the bird species migratory? </label>
+            <label for="yes"><input type="radio" name="isMigratory" id="Yes"> Yes</label>
+            <label for="no"><input type="radio" name="isMigratory" id="No"> No</label>
+            <label for="notSure"><input type="radio" name="isMigratory" id="notSure"> Not Sure</label>
+
+            <label for="direction">Direction of Flight</label>
+            <label for="north"><input type="radio" name="direction" id="north"> North</label>
+            <label for="south"><input type="radio" name="direction" id="south"> South</label>
+            <label for="east"><input type="radio" name="direction" id="east"> East</label>
+            <label for="west"><input type="radio" name="direction" id="west"> West</label>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Season of Arrival</legend>
+            <label for="winter"><input type="radio" name="arrival-season" id="winter"> winter</label>
+            <label for="summer"><input type="radio" name="arrival-season" id="summer"> summer</label>
+            <label for="monsoon"><input type="radio" name="arrival-season" id="monsoon"> Monsoon</label>
+            <label for="autumn"><input type="radio" name="arrival-season" id="autumn"> Autumn</label>
+        </fieldset>
+        <fieldset>
+            <legend>Season of Departure</legend>
+            <label for="winter"><input type="radio" name="departure-season" id="winter"> winter</label>
+            <label for="summer"><input type="radio" name="departure-season" id="summer"> summer</label>
+            <label for="monsoon"><input type="radio" name="departure-season" id="monsoon"> Monsoon</label>
+            <label for="autumn"><input type="radio" name="departure-season" id="autumn"> Autumn</label>
+        </fieldset>
+        <h2>Media Upload</h2>
+        <fieldset>
+            <legend>Upload Photos/Videos (optional but <em>encouraged</em>)</legend>
+            <input type="file" name="photoVideo" id="photoVideo">
+        </fieldset>
+        <label for="">Additional Comments (if any)</label>
+        <textarea name="additionalInfo" id="additionalInfo" placeholder="Did you notice anything rare or unexpected?"
+            rows="4" cols="30"></textarea>
+    </form>
+</body>
+
+</html>
