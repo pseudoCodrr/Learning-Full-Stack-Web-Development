@@ -1,0 +1,39 @@
+/* inheritance: css properties on parent element is applied to all childs. */
+body {
+  color: red;
+}
+ul {
+  color: rgb(12, 235, 57);
+}
+
+/* specificity: if specifically an element is selected then its css will be applied regardless of where it is placed in style.css file.  specificity of ID is greater than class*/
+
+/* this selector means that element which have ID and its specificty is highest */
+#html#html#html#html#html {
+  background-color: coral;
+}
+/* this selector means that element which have ID and class as Html. its specificty is high */
+#html.html {
+  background-color: aqua;
+}
+
+#html {
+  background-color: crimson;
+}
+.html {
+  background-color: rgb(203, 30, 163);
+}
+
+/* Cascade:- cascade means top to bottom. Means, last css property will be applied to the element.  */
+li {
+  font-weight: 700;
+  background-color: green;
+}
+
+li {
+  background-color: orange;
+}
+
+li {
+  background-color: rgb(0, 60, 255);
+}

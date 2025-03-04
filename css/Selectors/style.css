@@ -1,0 +1,45 @@
+/* element selector */
+li {
+  font-weight: 700;
+  font-size: 32px;
+}
+/* class selector */
+.html {
+  color: #e96228;
+}
+.css {
+  color: #234ae6;
+}
+.js {
+  color: #ecda1d;
+}
+.react {
+  color: #5ed3f3;
+}
+.tailWind {
+  color: #07b0ce;
+}
+
+/* ID selector */
+#html {
+  text-decoration: underline;
+}
+
+/* attribute selector */
+[pseudo-codrr] {
+  background-color: green;
+}
+
+/* descendant selector */
+ul p {
+  background-color: yellow;
+}
+
+/* pseudo selector */
+.html:hover {
+  font-size: 40px;
+  color: #b74d20;
+}
+[pseudo-codrr]:hover {
+  background-color: rgb(6, 121, 209);
+}
